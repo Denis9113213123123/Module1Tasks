@@ -6,7 +6,7 @@ const array = [
 const funct = (arr) => {
   const arr2 = [];
   arr.forEach((item) => {
-    arr2.push({name: item.name, total: item.price * item.amount})
+    arr2.push({name: item.name, total: item.price * item.amount});
   })
   return arr2;
 }

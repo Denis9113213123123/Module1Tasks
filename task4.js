@@ -1,17 +1,10 @@
-const N=3;
-let a=1;
-let b=1;
-let c=0;
+const N = 10;
 
-const funct = (N) => {
-  if (N!=0){
-    for (let i=3;i<=N;i++){
-      c = a + b;
-      a = b;
-      b = c;
-    }
-    return b;
+const fibanach = (num) => {
+  const arr = [0, 1];
+  for (let i = 2; i < num; i++) {
+    arr[i] = arr[i - 2] + arr[i - 1];
   }
-  else return 0;
-  };
-console.log(funct(N));
+  return arr;
+};
+console.log(fibanach(N));

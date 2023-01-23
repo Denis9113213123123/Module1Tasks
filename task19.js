@@ -1,10 +1,10 @@
-const str = "Иванов Пётр Андреевич"
+const str = "ivanov.oleg@pochta.com"
 
 const func = (str) => {
   const arrayObj = [];
   let stroka = ''
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === " ") {
+    if (str[i] === "@") {
       arrayObj.push(stroka)
       stroka = '';
     } else {
@@ -12,10 +12,9 @@ const func = (str) => {
     }
   }
   arrayObj.push(stroka)
-   return {
-    first_name: arrayObj[0],
-    last_name: arrayObj[1],
-    patronymic_name: arrayObj[2]
+  return {
+    username: arrayObj[0],
+    domain: arrayObj[1],
   }
 }
-console.log(func(str));
+console.log(func(str))

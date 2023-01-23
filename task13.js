@@ -1,8 +1,7 @@
 const array = ["str", 123, "123", true, null, {}, 2];
 const funct = (arr) => {
   for (let i = 0; i < arr.length; i++) {
-    let a = typeof arr[i];
-    switch (a) {
+    switch (typeof arr[i]) {
       case "string":
         console.log("Это строка!");
         break;

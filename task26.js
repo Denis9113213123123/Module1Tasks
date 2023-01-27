@@ -1,4 +1,4 @@
-array1 = [1,2,3];
+const array1 = [1,2,3];
 const a = 4;
 const b = 5;
 const c = 6;
